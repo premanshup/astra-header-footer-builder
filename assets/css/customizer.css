@@ -1,0 +1,50 @@
+/* Is active header builder CSS */
+
+#customize-theme-controls #sub-accordion-section-section-header-builder.kadence-builder-active,
+#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder.kadence-footer-builder-active {
+    transform: translateY(0%);
+    visibility: visible;
+    overflow: visible
+}
+
+#customize-theme-controls #sub-accordion-section-section-header-builder.kadence-builder-active.kadence-builder-hide,
+#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder.kadence-footer-builder-active.kadence-builder-hide {
+    transform: translateY(100%) !important;
+    overflow: visible
+}
+
+.kadence-builder-active>li.customize-section-description-container,
+.kadence-footer-builder-active>li.customize-section-description-container {
+    display: none !important
+}
+
+/* Header builder CSS */
+
+#customize-theme-controls #sub-accordion-section-section-header-builder,
+#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder {
+    left: 18%;
+}
+
+#customize-theme-controls #sub-accordion-section-section-header-builder,
+#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder {
+    position: fixed !important;
+    top: auto;
+    left: 300px;
+    right: 0;
+    background: #eee;
+    border-top: 1px solid #A0AEC0;
+    bottom: 0;
+    visibility: visible;
+    height: auto;
+    width: auto;
+    padding: 0;
+    max-height: 60%;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: all 0.2s;
+    backface-visibility: hidden;
+}
+
+#customize-theme-controls input[type="astra_blank_control"] {
+    display: none;
+}

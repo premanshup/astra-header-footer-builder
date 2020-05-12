@@ -12,6 +12,7 @@ if ( 'astra' !== get_template() ) {
 	return;
 }
 
+define( 'ASTRA_HFB_VERSION', '1.0.0' );
 define( 'ASTRA_HFB_FILE', __FILE__ );
 define( 'ASTRA_HFB_DIR', plugin_dir_path( ASTRA_HFB_FILE ) );
 define( 'ASTRA_HFB_URI', plugins_url( '/', ASTRA_HFB_FILE ) );
