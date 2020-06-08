@@ -117,17 +117,17 @@ class Astra_Hfb_Loader {
 		);
 		wp_enqueue_script( 'astra-hfb-customizer-controls', ASTRA_HFB_URI . 'assets/js/customizer.js', $editor_dependencies, ASTRA_HFB_VERSION, true );
 		wp_enqueue_style( 'astra-hfb-customizer-controls', $path . 'react/build/controls.css', array( 'wp-components' ), ASTRA_HFB_VERSION );
-		wp_localize_script(
-			'astra-hfb-customizer-controls',
-			'astraCustomizerControlsData',
-			array(
-				'contexts'  => self::get_control_contexts(),
-				'choices'   => self::get_builder_choices(),
-				'palette'   => kadence()->get_palette(),
-				'gfontvars' => $google_font_variants,
-				'cfontvars' => apply_filters( 'kadence_theme_custom_fonts', array() ),
-			)
-		);
+		// wp_localize_script(
+		// 	'astra-hfb-customizer-controls',
+		// 	'astraCustomizerControlsData',
+		// 	array(
+		// 		'contexts'  => self::get_control_contexts(),
+		// 		'choices'   => self::get_builder_choices(),
+		// 		'palette'   => kadence()->get_palette(),
+		// 		'gfontvars' => $google_font_variants,
+		// 		'cfontvars' => apply_filters( 'kadence_theme_custom_fonts', array() ),
+		// 	)
+		// );
     }
     
     /**
