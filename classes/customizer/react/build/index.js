@@ -1640,7 +1640,7 @@ __webpack_require__.r(__webpack_exports__);
 
 wp.customize.controlConstructor.astra_text_control = _text_control_js__WEBPACK_IMPORTED_MODULE_2__["TextControl"];
 window.addEventListener('load', function () {
-  console.log('EMINEM WORK');
+  console.log('EMINEM');
 });
 
 /***/ }),
@@ -1738,7 +1738,6 @@ var TextComponent = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      console.log('Working baba');
       return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_6__["createElement"])("div", {
         className: "kadence-control-field kadence-text-control"
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_6__["createElement"])(TextControl, {

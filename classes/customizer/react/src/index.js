@@ -6,5 +6,5 @@ import { TextControl } from './text/control.js';
 wp.customize.controlConstructor.astra_text_control = TextControl;
 
 window.addEventListener( 'load', () => {
-    console.log('EMINEM WORK');
+    console.log('EMINEM');
 } );

@@ -16,7 +16,6 @@ class TextComponent extends Component {
 	}
 
 	render() {
-		console.log('Working baba');
 		return (
 			<div className="kadence-control-field kadence-text-control">
 				<TextControl
