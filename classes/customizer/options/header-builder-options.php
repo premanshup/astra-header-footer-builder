@@ -151,6 +151,19 @@ class Astra_Hfb_Configs extends Astra_Customizer_Config_Base {
 					'container_inclusive' => false,
 				),
 			),
+
+			/**
+			 * Option: Astra Text React
+			 */
+			array(
+				'name'     => ASTRA_THEME_SETTINGS . '[text-try]',
+				'default'  => 'none',
+				'section'  => 'section-header-layout',
+				'label'    => __( 'Text Try', 'astra' ),
+				'type'     => 'control',
+				'control'  => 'astra_text_control',
+				'priority' => 10,
+			),
 		);
 
 		return array_merge( $configurations, $_configs );

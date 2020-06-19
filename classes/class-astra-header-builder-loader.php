@@ -73,8 +73,10 @@ class Astra_Hfb_Loader {
 	}
 
     public function add_hfb_custom_control( $wp_customize ) {
+        $react_path = ASTRA_HFB_DIR . '/classes/customizer/react/';
         require_once ASTRA_HFB_DIR . 'classes/customizer/custom-controls/class-astra-control-blank.php';
         require_once ASTRA_HFB_DIR . 'classes/customizer/custom-controls/class-astra-control-builder.php';
+        require_once $react_path . 'class-kadence-control-text.php';
     }
 
     public function settings_array( $wp_customize ) {
@@ -115,8 +117,10 @@ class Astra_Hfb_Loader {
 			'wp-edit-post',
 			'wp-element',
 		);
-		wp_enqueue_script( 'astra-hfb-customizer-controls', ASTRA_HFB_URI . 'assets/js/customizer.js', $editor_dependencies, ASTRA_HFB_VERSION, true );
-		wp_enqueue_style( 'astra-hfb-customizer-controls', $path . 'react/build/controls.css', array( 'wp-components' ), ASTRA_HFB_VERSION );
+		// wp_enqueue_script( 'astra-hfb-customizer-controls', ASTRA_HFB_URI . 'assets/js/customizer.js', $editor_dependencies, ASTRA_HFB_VERSION, true );
+		wp_enqueue_script( 'astra-hfb-customizer-controls', ASTRA_HFB_URI . 'classes/customizer/react/build/index.js', $editor_dependencies, ASTRA_HFB_VERSION, true );
+		// wp_enqueue_script( 'astra-hfb-customizer-controls', ASTRA_HFB_URI . 'classes/customizer/react/build/index.js', $editor_dependencies, ASTRA_HFB_VERSION, true );
+		wp_enqueue_style( 'astra-hfb-customizer-controls', ASTRA_HFB_URI . 'assets/css/customizer.css', array( 'wp-components' ), ASTRA_HFB_VERSION );
 		// wp_localize_script(
 		// 	'astra-hfb-customizer-controls',
 		// 	'astraCustomizerControlsData',

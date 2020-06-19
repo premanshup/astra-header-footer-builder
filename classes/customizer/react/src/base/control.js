@@ -6,7 +6,6 @@
  * @augments wp.customize.Class
  */
 export const baseControl = wp.customize.astraControl = wp.customize.Control.extend( {
-
 	initialize: function( id, options ) {
 		var control = this,
 			args    = options || {};
