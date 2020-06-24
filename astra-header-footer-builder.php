@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Astra Header Builder React
+ * Plugin Name: Premanshu React
  * Plugin URI: wpastra.com
  * Description: The very first plugin that I have ever created.
  * Version: 1.0

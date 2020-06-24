@@ -11,7 +11,7 @@ if ( ! class_exists( 'WP_Customize_Control' ) ) {
 
 
 /**
- * Class Kadence_Control_Blank
+ * Class Astra_Control_Blank
  *
  * @access public
  */

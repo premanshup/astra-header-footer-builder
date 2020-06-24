@@ -3,17 +3,16 @@
  *
  * @class
  * @augments wp.customize.Control
- * @augments wp.customize.Class
+ * @augments wp.customize.Class Testing
  */
 export const baseControl = wp.customize.astraControl = wp.customize.Control.extend( {
-
 	initialize: function( id, options ) {
 		var control = this,
 			args    = options || {};
 
 		args.params = args.params || {};
 		if ( ! args.params.type ) {
-			args.params.type = 'kadence-basic';
+			args.params.type = 'astra-basic';
 		}
 		if ( ! args.params.content ) {
 			args.params.content = jQuery( '<li></li>' );

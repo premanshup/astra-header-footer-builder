@@ -1,32 +1,32 @@
 /* Is active header builder CSS */
 
-#customize-theme-controls #sub-accordion-section-section-header-builder.kadence-builder-active,
-#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder.kadence-footer-builder-active {
+#customize-theme-controls #sub-accordion-section-section-header-builder.astra-builder-active,
+#customize-theme-controls #sub-accordion-section-astra_customizer_footer_builder.astra-footer-builder-active {
     transform: translateY(0%);
     visibility: visible;
     overflow: visible
 }
 
-#customize-theme-controls #sub-accordion-section-section-header-builder.kadence-builder-active.kadence-builder-hide,
-#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder.kadence-footer-builder-active.kadence-builder-hide {
+#customize-theme-controls #sub-accordion-section-section-header-builder.astra-builder-active.astra-builder-hide,
+#customize-theme-controls #sub-accordion-section-astra_customizer_footer_builder.astra-footer-builder-active.astra-builder-hide {
     transform: translateY(100%) !important;
     overflow: visible
 }
 
-.kadence-builder-active>li.customize-section-description-container,
-.kadence-footer-builder-active>li.customize-section-description-container {
+.astra-builder-active>li.customize-section-description-container,
+.astra-footer-builder-active>li.customize-section-description-container {
     display: none !important
 }
 
 /* Header builder CSS */
 
 #customize-theme-controls #sub-accordion-section-section-header-builder,
-#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder {
+#customize-theme-controls #sub-accordion-section-astra_customizer_footer_builder {
     left: 18%;
 }
 
 #customize-theme-controls #sub-accordion-section-section-header-builder,
-#customize-theme-controls #sub-accordion-section-kadence_customizer_footer_builder {
+#customize-theme-controls #sub-accordion-section-astra_customizer_footer_builder {
     position: fixed !important;
     top: auto;
     left: 300px;

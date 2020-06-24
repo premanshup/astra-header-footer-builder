@@ -1,6 +1,10 @@
 /* global wp */
-// import { Base } from './customizer.js';
-// import { BaseControl } from './base/control.js';
-// import { BuilderControl } from './layout-builder/control.js';
+import { Base } from './customizer.js';
+import { BaseControl } from './base/control.js';
+import { TextControl } from './text/control.js';
 
-// wp.customize.controlConstructor.astra_builder_control = BuilderControl;
+wp.customize.controlConstructor.astra_text_control = TextControl;
+
+window.addEventListener( 'load', () => {
+    console.log('EMINEM WORK');
+} );

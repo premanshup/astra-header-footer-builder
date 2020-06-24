@@ -79,43 +79,6 @@ class Astra_Hfb_Configs extends Astra_Customizer_Config_Base {
 						'value'   => 'desktop',
 					),
 				),
-				// 'choices'      => array(
-				// 	'logo'          => array(
-				// 		'name'    => esc_html__( 'Logo', 'kadence' ),
-				// 		'section' => 'title_tagline',
-				// 	),
-				// 	'button'        => array(
-				// 		'name'    => esc_html__( 'Button', 'kadence' ),
-				// 		'section' => 'kadence_customizer_header_button',
-				// 	),
-				// ),
-				'input_attrs'  => array(
-					'group' => 'header_desktop_items',
-					'rows'  => array( 'top', 'main', 'bottom' ),
-					'zones' => array(
-						'top' => array(
-							'top_left'         => is_rtl() ? esc_html__( 'Top - Right', 'kadence' ) : esc_html__( 'Top - Left', 'kadence' ),
-							'top_left_center'  => is_rtl() ? esc_html__( 'Top - Right Center', 'kadence' ) : esc_html__( 'Top - Left Center', 'kadence' ),
-							'top_center'       => esc_html__( 'Top - Center', 'kadence' ),
-							'top_right_center' => is_rtl() ? esc_html__( 'Top - Left Center', 'kadence' ) : esc_html__( 'Top - Right Center', 'kadence' ),
-							'top_right'        => is_rtl() ? esc_html__( 'Top - Left', 'kadence' ) : esc_html__( 'Top - Right', 'kadence' ),
-						),
-						'main' => array(
-							'main_left'         => is_rtl() ? esc_html__( 'Main - Right', 'kadence' ) : esc_html__( 'Main - Left', 'kadence' ),
-							'main_left_center'  => is_rtl() ? esc_html__( 'Main - Right Center', 'kadence' ) : esc_html__( 'Main - Left Center', 'kadence' ),
-							'main_center'       => esc_html__( 'Main - Center', 'kadence' ),
-							'main_right_center' => is_rtl() ? esc_html__( 'Main - Left Center', 'kadence' ) : esc_html__( 'Main - Right Center', 'kadence' ),
-							'main_right'        => is_rtl() ? esc_html__( 'Main - Left', 'kadence' ) : esc_html__( 'Main - Right', 'kadence' ),
-						),
-						'bottom' => array(
-							'bottom_left'         => is_rtl() ? esc_html__( 'Bottom - Right', 'kadence' ) : esc_html__( 'Bottom - Left', 'kadence' ),
-							'bottom_left_center'  => is_rtl() ? esc_html__( 'Bottom - Right Center', 'kadence' ) : esc_html__( 'Bottom - Left Center', 'kadence' ),
-							'bottom_center'       => esc_html__( 'Bottom - Center', 'kadence' ),
-							'bottom_right_center' => is_rtl() ? esc_html__( 'Bottom - Left Center', 'kadence' ) : esc_html__( 'Bottom - Right Center', 'kadence' ),
-							'bottom_right'        => is_rtl() ? esc_html__( 'Bottom - Left', 'kadence' ) : esc_html__( 'Bottom - Right', 'kadence' ),
-						),
-					),
-				),
 			),
 
 			/*
@@ -151,6 +114,19 @@ class Astra_Hfb_Configs extends Astra_Customizer_Config_Base {
 					'container_inclusive' => false,
 				),
 			),
+
+			/**
+			 * Option: Astra Text React
+			 */
+			array(
+				'name'     => ASTRA_THEME_SETTINGS . '[text-try]',
+				'default'  => 'none',
+				'section'  => 'section-header-layout',
+				'label'    => __( 'Text Try', 'astra' ),
+				'type'     => 'control',
+				'control'  => 'astra_text_control',
+				'priority' => 10,
+			),
 		);
 
 		return array_merge( $configurations, $_configs );
@@ -166,18 +142,18 @@ class Astra_Hfb_Configs extends Astra_Customizer_Config_Base {
 	 * @return Array Astra Customizer Configurations with updated configurations.
 	 */
 	public function builder_tabs() {
-		return '<div class="astra-ignore-desc kadence-build-tabs nav-tab-wrapper wp-clearfix">
-			<a href="#" class="nav-tab preview-desktop kadence-build-tabs-button" data-device="desktop">
+		return '<div class="astra-ignore-desc astra-build-tabs nav-tab-wrapper wp-clearfix">
+			<a href="#" class="nav-tab preview-desktop astra-build-tabs-button" data-device="desktop">
 				<span class="dashicons dashicons-desktop"></span>
 				<span>Desktop</span>
 			</a>
-			<a href="#" class="nav-tab preview-tablet preview-mobile kadence-build-tabs-button" data-device="tablet">
+			<a href="#" class="nav-tab preview-tablet preview-mobile astra-build-tabs-button" data-device="tablet">
 				<span class="dashicons dashicons-smartphone"></span>
 				<span>Tablet / Mobile</span>
 			</a>
 		</div>
-		<span class="button button-secondary kadence-builder-hide-button kadence-builder-tab-toggle"><span class="dashicons dashicons-no"></span>Hide</span>
-		<span class="button button-secondary kadence-builder-show-button kadence-builder-tab-toggle"><span class="dashicons dashicons-edit"></span>Header Builder</span>';
+		<span class="button button-secondary astra-builder-hide-button astra-builder-tab-toggle"><span class="dashicons dashicons-no"></span>Hide</span>
+		<span class="button button-secondary astra-builder-show-button astra-builder-tab-toggle"><span class="dashicons dashicons-edit"></span>Header Builder</span>';
 	}
 	
 }
