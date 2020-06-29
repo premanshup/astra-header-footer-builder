@@ -77,6 +77,7 @@ class Astra_Hfb_Loader {
         require_once ASTRA_HFB_DIR . 'classes/customizer/custom-controls/class-astra-control-blank.php';
         require_once ASTRA_HFB_DIR . 'classes/customizer/custom-controls/class-astra-control-builder.php';
         require_once $react_path . 'class-astra-control-text.php';
+        require_once $react_path . 'class-astra-control-color-new.php';
     }
 
     public function settings_array( $wp_customize ) {

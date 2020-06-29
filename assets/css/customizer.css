@@ -48,3 +48,384 @@
 #customize-theme-controls input[type="astra_blank_control"] {
     display: none;
 }
+
+/** Button Color */
+
+.kadence-control-field.kadence-color-control {
+    display: flex;
+}
+
+.kadence-control-field {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.kadence-control-field.kadence-color-control .customize-control-title {
+    flex-grow: 2;
+}
+.kadence-control-field .customize-control-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+}
+.customize-control-title {
+    display: block;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.kadence-control-field button.components-button.kadence-reset:disabled {
+    opacity: 0;
+}
+.kadence-control-field button.components-button.kadence-reset {
+    height: 18px;
+    padding: 0 5px;
+    margin-right: 0;
+    margin-left: -20px;
+    opacity: 0.5;
+}
+.components-button:disabled, .components-button[aria-disabled="true"] {
+    cursor: default;
+    opacity: 0.3;
+}
+.components-button {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: none;
+    transition: box-shadow 0.1s linear;
+    height: 36px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 8px;
+    overflow: hidden;
+    border-radius: 3px;
+    color: #555d66;
+}
+
+.kadence-control-field button.components-button.kadence-reset svg {
+    width: 12px;
+    height: 12px;
+}
+svg.dashicon {
+    fill: currentColor;
+    outline: none;
+}
+.components-button svg {
+    fill: currentColor;
+    outline: none;
+}
+
+.kadence-color-picker-wrap {
+    margin-left: 5px;
+}
+
+.components-button.kadence-color-icon-indicate {
+    height: auto;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+}
+.components-button {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: none;
+    transition: box-shadow 0.1s linear;
+    height: 36px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 8px;
+    overflow: hidden;
+    border-radius: 3px;
+    color: #555d66;
+}
+
+.components-button.kadence-color-icon-indicate .component-color-indicator.kadence-advanced-color-indicate {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 0;
+}
+.component-color-indicator {
+    width: 25px;
+    height: 16px;
+    margin-left: 0.8rem;
+    border: 1px solid #dadada;
+    display: inline-block;
+}
+
+/** Color */
+
+.kadence-popover-color .components-popover__content {
+    min-width: 240px;
+}
+.kadence-popover-color .components-popover__content .components-focal-point-picker-wrapper {
+    box-sizing: border-box;
+}
+.kadence-popover-color .components-popover__content .components-focal-point-picker_position-display-container input[type="number"].components-text-control__input {
+    min-height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    width: 50px;
+    font-weight: normal;
+}
+.kadence-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control {
+    flex: 1;
+    margin-bottom: 0;
+}
+.kadence-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control .components-base-control__label {
+    margin-bottom: 0;
+    margin-right: 0.2em;
+}
+.kadence-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control__field {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.kadence-popover-color .components-popover__content .components-focal-point-picker_position-display-container .components-base-control:last-child .components-base-control__field {
+    justify-content: flex-end;
+}
+.kadence-popover-color .components-popover__content .actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.kadence-popover-color .components-popover__content .actions .button {
+    flex: 1;
+    margin-top: 10px;
+}
+.kadence-background-picker-wrap .kadence-popover-color .components-popover__content {
+    min-width: 300px;
+    min-height: 340px;
+    max-height: 60vh;
+}
+.components-button.kadence-color-icon-indicate {
+    height: auto;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+}
+.components-button.kadence-color-icon-indicate .component-color-indicator.kadence-advanced-color-indicate {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 0;
+}
+.components-button.kadence-color-icon-indicate:hover {
+    transform: scale(1.1);
+}
+.components-button.kadence-background-icon-indicate {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+    padding: 0;
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    border: 1px solid #dadada;
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+}
+.components-button.kadence-background-icon-indicate .component-color-indicator.kadence-advanced-color-indicate {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0;
+    display: block;
+    position: absolute;
+    border: 0;
+    top: 0;
+}
+.components-button.kadence-background-icon-indicate > svg.dashicon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.components-button.kadence-background-icon-indicate > svg.dashicon path {
+    transform: translate(1px, 1px);
+}
+.components-button.kadence-background-icon-indicate img.kadence-background-image-preview {
+    display: flex;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+}
+.components-button.kadence-background-icon-indicate:hover {
+    box-shadow: none !important;
+}
+.kadence-control-field.kadence-color-control {
+    display: flex;
+}
+.kadence-control-field.kadence-color-control .customize-control-title {
+    flex-grow: 2;
+}
+.components-popover.kadence-popover-color .components-popover__content {
+    padding: 15px 15px 0px;
+    box-sizing: initial;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+}
+.components-popover.kadence-popover-color .components-popover__content .sketch-picker {
+    padding: 0 0 5px !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+.components-popover.kadence-popover-color .components-popover__content .attachment-media-view {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.kadence-swatches-wrap .kadence-swatche-item-wrap:hover {
+    transform: scale(1.2) !important;
+}
+.kadence-swatches-wrap .kadence-swatche-item-wrap .kadence-swatch-item {
+    background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.kadence-swatches-wrap .kadence-swatche-item-wrap .kadence-swatch-item .dashicon {
+    display: none;
+}
+.kadence-swatches-wrap .kadence-swatche-item-wrap .kadence-swatch-item.swatch-active {
+    box-shadow: 0 0 0 8px inset !important;
+}
+.kadence-swatches-wrap .kadence-swatche-item-wrap .kadence-swatch-item.swatch-active .dashicon {
+    display: block;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.kadence-swatches-wrap .kadence-swatche-item-wrap .kadence-swatch-item.swatch-active .dashicon path {
+    transform: translate(1px, 1px);
+}
+.components-button.kadence-color-icon-indicate > svg.dashicon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.components-button.kadence-color-icon-indicate > svg.dashicon path {
+    transform: translate(1px, 1px);
+}
+.kadence-color-picker-wrap {
+    margin-left: 5px;
+}
+@media (max-width: 1800px) {
+    .kadence-palette-colors .components-button.kadence-color-icon-indicate .component-color-indicator.kadence-advanced-color-indicate {
+        width: 26px;
+        height: 26px;
+    }
+    .kadence-palette-colors .kadence-color-picker-wrap {
+        margin-left: 2px;
+    }
+    .kadence-typography-control .typography-button-wrap > button.components-button.kadence-typography-preview-indicate {
+        padding: 0 2px;
+    }
+    .kadence-typography-control .typography-button-wrap > button.components-button {
+        padding: 0 4px;
+    }
+}
+@media (max-width: 1400px) {
+    .kadence-palette-colors .components-button.kadence-color-icon-indicate .component-color-indicator.kadence-advanced-color-indicate {
+        width: 22px;
+        height: 22px;
+    }
+}
+.kadence-palette-colors .kadence-color-picker-wrap:first-child {
+    margin-left: 0;
+}
+.kadence-popover-tabs.kadence-background-tabs .components-tab-panel__tabs {
+    display: flex;
+    border-bottom: 1px solid #dadada;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.kadence-popover-tabs.kadence-background-tabs .components-tab-panel__tabs .components-button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    height: 36px;
+    text-transform: uppercase;
+    border: 0;
+    border-bottom: 4px solid transparent;
+    border-radius: 0;
+    margin-bottom: -1px;
+    opacity: 0.6;
+}
+.kadence-popover-tabs.kadence-background-tabs .components-tab-panel__tabs .components-button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.kadence-popover-tabs.kadence-background-tabs .components-tab-panel__tabs .components-button:hover {
+    box-shadow: none !important;
+    opacity: 1;
+    border-bottom: 4px solid #dadada;
+}
+.kadence-popover-tabs.kadence-background-tabs .components-tab-panel__tabs .components-button.active-tab {
+    border-bottom-color: #007cba;
+    opacity: 1;
+}
+.components-popover__content .kadence-radio-container-control {
+    padding: 10px 0;
+    background: white;
+}
+.kadence-control-field .kadence-background-tabs .customize-control-title {
+    padding-top: 10px;
+    font-size: 12px;
+    display: block;
+}

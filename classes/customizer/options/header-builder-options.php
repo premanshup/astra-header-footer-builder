@@ -127,6 +127,35 @@ class Astra_Hfb_Configs extends Astra_Customizer_Config_Base {
 				'control'  => 'astra_text_control',
 				'priority' => 10,
 			),
+
+			/**
+			 * Option: Astra Color React
+			 */
+			array(
+				'name'    => ASTRA_THEME_SETTINGS . '[post_archive_title_color]',
+				'type' => 'control',
+				'control' => 'astra_color_control_new',
+				'section'      => 'section-header-layout',
+				'title'        => esc_html__( 'Title Color', 'kadence' ),
+				'default'      => astra_get_option( 'post_archive_title_color' ),
+				'live_method'     => array(
+					array(
+						'type'     => 'css',
+						'selector' => '.post-archive-title h1',
+						'property' => 'color',
+						'pattern'  => '$',
+						'key'      => 'color',
+					),
+				),
+				'input_attrs'  => array(
+					'colors' => array(
+						'color' => array(
+							'tooltip' => __( 'Color', 'kadence' ),
+							'palette' => true,
+						),
+					),
+				),
+			),
 		);
 
 		return array_merge( $configurations, $_configs );
